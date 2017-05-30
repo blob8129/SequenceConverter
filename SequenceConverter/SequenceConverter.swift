@@ -8,7 +8,7 @@
 
 import Foundation
 
-
+/// Helper structure to hold the convinient methods to convert sequences
 struct SequenceConverter {
     static func commaSpaceBeforeMiddleFormat(_ items: CustomStringConvertible?...) -> String {
         return items.toStringWithSeparators(before: ", ", middle: ", ", after: "")
@@ -19,6 +19,8 @@ struct SequenceConverter {
     }
 }
 
+/// Extension to the sequence protocol where elemnt is conforms
+/// to the CustomStringConvertible protocol (could be an optional).
 extension Sequence where Iterator.Element == Optional<CustomStringConvertible>  {
     
     func toStringWithSeparators(before: CustomStringConvertible,
