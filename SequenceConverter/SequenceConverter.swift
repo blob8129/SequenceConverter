@@ -10,12 +10,13 @@ import Foundation
 
 /// Helper structure with the convinients methods to convert sequences
 struct SequenceConverter {
+    /// Separators before: ", ", between: ", ", after: ""
     static func commaSpaceBeforeMiddleFormat(_ items: CustomStringConvertible?...) -> String {
-        return items.toStringWithSeparators(before: ", ", middle: ", ", after: "")
+        return items.toStringWithSeparators(before: ", ", between: ", ", after: "")
     }
-    
+    /// Separators before: "", between: " ", after: ""
     static func middleSpaceFormat(_ items: CustomStringConvertible?...) -> String {
-        return items.toStringWithSeparators(before: "", middle: " ", after: "")
+        return items.toStringWithSeparators(before: "", between: " ", after: "")
     }
 }
 
@@ -24,11 +25,11 @@ struct SequenceConverter {
 extension Sequence where Iterator.Element == Optional<CustomStringConvertible>  {
     
     func toStringWithSeparators(before: CustomStringConvertible,
-                                middle: CustomStringConvertible,
-                                after : CustomStringConvertible) -> String {
+                                between: CustomStringConvertible,
+                                after: CustomStringConvertible) -> String {
         
         let filtred = flatMap { $0 }.filter { $0.description.isEmpty == false }
-        let middleSparators = Array<CustomStringConvertible>(repeating: middle, count: filtred.count)
+        let middleSparators = Array<CustomStringConvertible>(repeating: between, count: filtred.count)
         let mergedMiddle = zip(filtred, middleSparators)
             .enumerated()
             .flatMap { offset, element in
