@@ -10,6 +10,7 @@
 		CEF60C521EDD11F200FDB9CF /* SequenceConverter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF60C481EDD11F200FDB9CF /* SequenceConverter.framework */; };
 		CEF60C571EDD11F200FDB9CF /* SequenceConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF60C561EDD11F200FDB9CF /* SequenceConverterTests.swift */; };
 		CEF60C591EDD11F200FDB9CF /* SequenceConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = CEF60C4B1EDD11F200FDB9CF /* SequenceConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CEF60C631EDD129800FDB9CF /* SequenceConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF60C621EDD129800FDB9CF /* SequenceConverter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		CEF60C511EDD11F200FDB9CF /* SequenceConverterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SequenceConverterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEF60C561EDD11F200FDB9CF /* SequenceConverterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequenceConverterTests.swift; sourceTree = "<group>"; };
 		CEF60C581EDD11F200FDB9CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEF60C621EDD129800FDB9CF /* SequenceConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SequenceConverter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				CEF60C4B1EDD11F200FDB9CF /* SequenceConverter.h */,
+				CEF60C621EDD129800FDB9CF /* SequenceConverter.swift */,
 				CEF60C4C1EDD11F200FDB9CF /* Info.plist */,
 			);
 			path = SequenceConverter;
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					CEF60C471EDD11F200FDB9CF = {
 						CreatedOnToolsVersion = 8.3.2;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					CEF60C501EDD11F200FDB9CF = {
@@ -196,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEF60C631EDD129800FDB9CF /* SequenceConverter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +327,7 @@
 		CEF60C5D1EDD11F200FDB9CF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -333,6 +339,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.blob8129.SequenceConverter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -340,6 +347,7 @@
 		CEF60C5E1EDD11F200FDB9CF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -358,6 +366,7 @@
 		CEF60C601EDD11F200FDB9CF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = SequenceConverterTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.blob8129.SequenceConverterTests;
@@ -369,6 +378,7 @@
 		CEF60C611EDD11F200FDB9CF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = SequenceConverterTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.blob8129.SequenceConverterTests;
