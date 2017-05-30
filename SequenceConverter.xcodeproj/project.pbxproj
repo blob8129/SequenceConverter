@@ -406,6 +406,7 @@
 				CEF60C5E1EDD11F200FDB9CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CEF60C5F1EDD11F200FDB9CF /* Build configuration list for PBXNativeTarget "SequenceConverterTests" */ = {
 			isa = XCConfigurationList;
@@ -414,6 +415,7 @@
 				CEF60C611EDD11F200FDB9CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
