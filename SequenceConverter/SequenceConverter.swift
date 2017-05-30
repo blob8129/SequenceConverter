@@ -3,19 +3,19 @@
 //  Ralli
 //
 //  Created by Andrey Volobuev on 29/05/2017.
-//  Copyright © 2017 Mikhail Golovko. All rights reserved.
+//  Copyright © 2017 Andrey Volobuev. All rights reserved.
 //
 
 import Foundation
 
 /// Helper structure with the convinients methods to convert sequences
-struct SequenceConverter {
+public struct SequenceConverter {
     /// Separators before: ", ", between: ", ", after: ""
-    static func commaSpaceBeforeMiddleFormat(_ items: CustomStringConvertible?...) -> String {
+    public static func commaSpaceBeforeMiddleFormat(_ items: CustomStringConvertible?...) -> String {
         return items.toStringWithSeparators(before: ", ", between: ", ", after: "")
     }
     /// Separators before: "", between: " ", after: ""
-    static func middleSpaceFormat(_ items: CustomStringConvertible?...) -> String {
+    public static func middleSpaceFormat(_ items: CustomStringConvertible?...) -> String {
         return items.toStringWithSeparators(before: "", between: " ", after: "")
     }
 }
@@ -24,7 +24,7 @@ struct SequenceConverter {
 /// to the CustomStringConvertible protocol (could be an optional).
 extension Sequence where Iterator.Element == Optional<CustomStringConvertible>  {
     
-    func toStringWithSeparators(before: CustomStringConvertible,
+    public func toStringWithSeparators(before: CustomStringConvertible,
                                 between: CustomStringConvertible,
                                 after: CustomStringConvertible) -> String {
         

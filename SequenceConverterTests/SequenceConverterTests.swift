@@ -3,7 +3,7 @@
 //  SequenceConverterTests
 //
 //  Created by Andrey Volobuev on 30/05/2017.
-//  Copyright © 2017 blob8129. All rights reserved.
+//  Copyright © 2017 Andrey Volobuev. All rights reserved.
 //
 
 import XCTest
