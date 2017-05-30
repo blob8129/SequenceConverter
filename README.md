@@ -1,4 +1,4 @@
-\# Sequence Converter
+# Sequence Converter
 
 Library containing extension to the sequence protocol where element is conforms
 to the CustomStringConvertible protocol (could be an optional).
