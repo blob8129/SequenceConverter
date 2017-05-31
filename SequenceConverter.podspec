@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "SequenceConverter"
-  s.version      = "1.0.3"
+  s.version      = "1.0.4"
   s.summary      = "Library helps to convert sequences"
 
   # This description is used to generate tags and improve search results.
@@ -91,7 +91,9 @@ Also contains a helper structure with the convinients methods to convert sequenc
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "SequenceConverter/**/*" 
+  s.source_files  = "SequenceConverter/*.swift"
+  # s.source_files  = "SequenceConverterTests", "SequenceConverter", "SequenceConverter/**/*.{h,m,swift}"
+  # s.source_files  = "SequenceConverter/**/*" 
   # s.source_files  = "SequenceConverter", "SequenceConverter/**/*.{h,m,swift}"
   # s.exclude_files = "Classes/Exclude"
 
