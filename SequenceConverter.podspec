@@ -66,6 +66,7 @@ Also contains a helper structure with the convinients methods to convert sequenc
 
   # s.platform     = :ios
   s.platform     = :ios, "9.0"
+  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '3.1' }
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
