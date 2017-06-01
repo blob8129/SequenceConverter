@@ -20,6 +20,15 @@ Also contains a helper structure with the convinients methods to convert sequenc
 - Small 
 - 100% unit tested 
 
+## Installation
+
+NumeralEndings is available through [CocoaPods](http://cocoapods.org). To install
+it, simply add the following line to your Podfile:
+
+```ruby
+pod "SequenceConverter"
+```
+
 ## Why would I need it?
 
 Classic example is resolving correct string with a punctuation from a firstname, middlename and lastname in the case when it is possible
@@ -39,7 +48,10 @@ let formatted = SequenceConverter.middleSpaceFormat("Ivanov", "Ivan" )
 //"<-1|4|5->"
 
 ```
+## Author
+
+Andrey Volobyev blob8129@gmail.com
 
 ## Get in touch
 
-If you have any questions, drop me an email blob8129@gmail.com.
+If you have any questions, drop me an email.
