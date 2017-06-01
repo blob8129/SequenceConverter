@@ -4,16 +4,16 @@
 [![License](https://img.shields.io/cocoapods/l/SequenceConverter.svg?style=flat)](http://cocoapods.org/pods/SequenceConverter)
 [![Platform](https://img.shields.io/cocoapods/p/SequenceConverter.svg?style=flat)](http://cocoapods.org/pods/SequenceConverter)
 
-Library containing extension to the sequence protocol where element is conforms
-to the CustomStringConvertible protocol (could be an optional).
-Also contains a helper structure with the convinients methods to convert sequences
+A library containing the extension to the sequence protocol where an element conform to the 
+CustomStringConvertible protocol (could be optional). Also, contains a helper structure with the convenience
+methods to convert sequences
 
 ## Features
 
 - Converts sequences to strings 
 - Removes empty elements 
 - Removes nil elements 
-- Correctly puts seperators before, after and between the elements 
+- Correctly puts separators before, after and between the elements 
 
 ## Pros 
 
@@ -31,8 +31,9 @@ pod "SequenceConverter"
 
 ## Why would I need it?
 
-Classic example is resolving correct string with a punctuation from a firstname, middlename and lastname in the case when it is possible
-for each element to be empty or nil.    
+
+The classic example is resolving correct string with a punctuation from a first name, middle name and last
+name in the case when it is possible for each element to be empty or nil.     
 
 ### Solution
 
