@@ -1,5 +1,9 @@
 # Sequence Converter
 
+[![Version](https://img.shields.io/cocoapods/v/SequenceConverter.svg?style=flat)](http://cocoapods.org/pods/SequenceConverter)
+[![License](https://img.shields.io/cocoapods/l/SequenceConverter.svg?style=flat)](http://cocoapods.org/pods/SequenceConverter)
+[![Platform](https://img.shields.io/cocoapods/p/SequenceConverter.svg?style=flat)](http://cocoapods.org/pods/SequenceConverter)
+
 Library containing extension to the sequence protocol where element is conforms
 to the CustomStringConvertible protocol (could be an optional).
 Also contains a helper structure with the convinients methods to convert sequences
