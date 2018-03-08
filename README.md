@@ -51,7 +51,7 @@ let formatted = SequenceConverter.middleSpaceFormat("Ivanov", "Ivan" )
 ```
 ## Author
 
-Andrey Volobyev blob8129@gmail.com
+Andrey Volobuev blob8129@gmail.com
 
 ## Get in touch
 
